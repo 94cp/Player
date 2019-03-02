@@ -105,17 +105,19 @@ extension NormalForceRotateViewController: PlayerViewControllerDelegate {
         } else {
             currentPlayIndex = nextIndex
             
-            controls.reset()
-            controls.topPanel.titleLabel.text = assets[currentPlayIndex].title
-            controls.coverImageView.kf.setImage(with: assets[currentPlayIndex].coverURL)
-            controls.show(animated: true)
-            
             player.contentURL = assets[currentPlayIndex].contentURL
             if shouldAutoplay {
                 player.prepareToPlay()
             } else {
                 player.play()
             }
+            
+            controls.reset()
+            controls.centerPlayOrPauseButton.isHidden = true
+            controls.topPanel.titleLabel.text = assets[currentPlayIndex].title
+            controls.coverImageView.kf.setImage(with: assets[currentPlayIndex].coverURL)
+            controls.show(animated: true)
+            controls.speedLoading.startAnimating()
         }
     }
     
