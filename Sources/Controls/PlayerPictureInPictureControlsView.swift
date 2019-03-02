@@ -266,12 +266,6 @@ open class PlayerPictureInPictureControlsView: UIView, PlayerControlsable {
             coverImageView.isHidden = false
         }
         speedLoading.stopAnimating()
-        
-        guard let window = UIApplication.shared.delegate?.window ?? nil else { return }
-        
-        if !window.bounds.contains(playerViewController.pictureInPictureController.pictureInPictureView.frame) {
-            playerViewController.pictureInPictureController.layoutPictureInPicture()
-        }
     }
 
     // MARK: - 🔥PlayerGestureable🔥

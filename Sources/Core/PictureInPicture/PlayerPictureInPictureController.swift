@@ -127,20 +127,18 @@ open class PlayerPictureInPictureController {
             func startPIPFinish() {
                 self._isAnimating = false
                 self.isPictureInPictureActive = true
+                if !window.bounds.contains(self.pictureInPictureView.frame) {
+                    self.layoutPictureInPicture()
+                }
                 self.delegate?.pictureInPictureControllerDidStartPictureInPicture(self)
             }
             
             if self.presentingViewController != nil {
-                playerViewController.visibleViewController.dismiss(animated: false, completion: {
-                    startPIPFinish()
-                })
+                playerViewController.visibleViewController.dismiss(animated: false, completion: nil)
             } else if let navigationController = self.navigationController {
-                navigationController.popViewController(animated: false, completion: {
-                    startPIPFinish()
-                })
-            } else {
-                startPIPFinish()
+                navigationController.popViewController(animated: false)
             }
+            startPIPFinish()
         })
     }
     
@@ -186,12 +184,9 @@ open class PlayerPictureInPictureController {
                     stopPIPFinish()
                 }
             } else if let navigationController = navigationController {
-                navigationController.pushViewController(visibleViewController, animated: animated) {
-                    stopPIPFinish()
-                }
-            } else {
-                stopPIPFinish()
+                navigationController.pushViewController(visibleViewController, animated: animated)
             }
+            stopPIPFinish()
         }
     }
     
@@ -283,34 +278,6 @@ extension UIWindow {
     public var playerViewController: PlayerViewController? {
         get { return objc_getAssociatedObject(self, &AssociatedKeys.playerViewController) as? PlayerViewController }
         set { objc_setAssociatedObject(self, &AssociatedKeys.playerViewController, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
-    }
-}
-
-extension UINavigationController {
-    
-    public func popViewController(animated: Bool, completion: (() -> Void)? = nil) {
-        CATransaction.begin()
-        CATransaction.setCompletionBlock(completion)
-        popViewController(animated: animated)
-        CATransaction.commit()
-    }
-    
-    public func pushViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil) {
-        CATransaction.begin()
-        CATransaction.setCompletionBlock(completion)
-        pushViewController(viewController, animated: animated)
-        CATransaction.commit()
-    }
-    
-    public func popToViewController<T: UIViewController>(_ type: T.Type, animated: Bool, completion: (() -> Void)? = nil) {
-        for viewController in viewControllers {
-            if viewController.isKind(of: type) {
-                CATransaction.begin()
-                CATransaction.setCompletionBlock(completion)
-                popToViewController(viewController, animated: animated)
-                CATransaction.commit()
-            }
-        }
     }
 }
 

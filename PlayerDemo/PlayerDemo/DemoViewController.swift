@@ -145,13 +145,15 @@ class DemoViewController: UIViewController, UITableViewDataSource, UITableViewDe
             case 3:
                 let currentPlayIndex = 0
                 let playerViewController = PlayerViewController()
-                let player = MovieAVPlayerController(contentURL: assets[currentPlayIndex].coverURL)
+                let player = MovieAVPlayerController(contentURL: assets[currentPlayIndex].contentURL)
                 let controls = PlayerControlsView()
                 playerViewController.controlsView = controls
                 playerViewController.playback = player
+                player.prepareToPlay()
                 controls.topPanel.titleLabel.text = assets[currentPlayIndex].title
                 controls.coverImageView.kf.setImage(with: assets[currentPlayIndex].coverURL)
                 controls.show(animated: true)
+                controls.speedLoading.startAnimating()
                 present(playerViewController, animated: true, completion: nil)
             default:
                 break
@@ -168,13 +170,15 @@ class DemoViewController: UIViewController, UITableViewDataSource, UITableViewDe
             case 3:
                 let currentPlayIndex = 0
                 let playerViewController = PlayerViewController()
-                let player = MovieAVPlayerController(contentURL: assets[currentPlayIndex].coverURL)
+                let player = IJKPlayerController(contentURL: assets[currentPlayIndex].contentURL)
                 let controls = PlayerControlsView()
                 playerViewController.controlsView = controls
                 playerViewController.playback = player
+                player.prepareToPlay()
                 controls.topPanel.titleLabel.text = assets[currentPlayIndex].title
                 controls.coverImageView.kf.setImage(with: assets[currentPlayIndex].coverURL)
-                controls.hide(animated: true)
+                controls.show(animated: true)
+                controls.speedLoading.startAnimating()
                 navigationController?.pushViewController(playerViewController, animated: true)
             default:
                 break
