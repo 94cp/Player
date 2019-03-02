@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84EF3F00222A5E8A00F0EBC5 /* PlayerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3EFE222A5E8A00F0EBC5 /* PlayerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EF3F04222A5F4400F0EBC5 /* UINavigationController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EB7222A5E5600F0EBC5 /* UINavigationController+Autorotate.m */; };
+		84EF3F05222A5F4400F0EBC5 /* UITabBarController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EBA222A5E5600F0EBC5 /* UITabBarController+Autorotate.m */; };
+		84EF3F06222A5F4400F0EBC5 /* UIViewController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EBC222A5E5600F0EBC5 /* UIViewController+Autorotate.m */; };
+		84EF3F07222A5F4400F0EBC5 /* Orientation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EBD222A5E5600F0EBC5 /* Orientation+.swift */; };
+		84EF3F08222A5F4400F0EBC5 /* PlayerRotateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EBE222A5E5600F0EBC5 /* PlayerRotateManager.swift */; };
+		84EF3F09222A5F4400F0EBC5 /* PlayerViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EBF222A5E5600F0EBC5 /* PlayerViewController+Delegate.swift */; };
+		84EF3F0A222A5F4400F0EBC5 /* PlayerPictureInPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC1222A5E5600F0EBC5 /* PlayerPictureInPictureView.swift */; };
+		84EF3F0C222A5F4400F0EBC5 /* PlayerPictureInPictureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC3222A5E5600F0EBC5 /* PlayerPictureInPictureController.swift */; };
+		84EF3F0D222A5F4400F0EBC5 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC4222A5E5600F0EBC5 /* PlayerViewController.swift */; };
+		84EF3F0E222A5F4400F0EBC5 /* Playerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC6222A5E5600F0EBC5 /* Playerable.swift */; };
+		84EF3F0F222A5F4400F0EBC5 /* PlayerControlsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC7222A5E5600F0EBC5 /* PlayerControlsable.swift */; };
+		84EF3F10222A5F4400F0EBC5 /* Playerable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC8222A5E5700F0EBC5 /* Playerable+Optional.swift */; };
+		84EF3F11222A5F4400F0EBC5 /* PlayerPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EC9222A5E5700F0EBC5 /* PlayerPlayback.swift */; };
+		84EF3F12222A5F4400F0EBC5 /* PlayerGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ECB222A5E5700F0EBC5 /* PlayerGestureManager.swift */; };
+		84EF3F13222A5F4400F0EBC5 /* PlayerGestureManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ECC222A5E5700F0EBC5 /* PlayerGestureManagerDelegate.swift */; };
+		84EF3F14222A5F4400F0EBC5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ECE222A5E5700F0EBC5 /* Log.swift */; };
+		84EF3F15222A5F4400F0EBC5 /* NetFlowMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED1222A5E5700F0EBC5 /* NetFlowMonitor.swift */; };
+		84EF3F16222A5F4400F0EBC5 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED2222A5E5700F0EBC5 /* Net.m */; };
+		84EF3F17222A5F4400F0EBC5 /* AVAudioSession+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED4222A5E5700F0EBC5 /* AVAudioSession+.swift */; };
+		84EF3F18222A5F4400F0EBC5 /* VolumeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED5222A5E5700F0EBC5 /* VolumeKit.swift */; };
+		84EF3F19222A5F6200F0EBC5 /* UITabBarController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3EB8222A5E5600F0EBC5 /* UITabBarController+Autorotate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		84EF3F1A222A5F6200F0EBC5 /* UIViewController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3EB9222A5E5600F0EBC5 /* UIViewController+Autorotate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		84EF3F1B222A5F6200F0EBC5 /* UINavigationController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3EBB222A5E5600F0EBC5 /* UINavigationController+Autorotate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		84EF3F1C222A5F6200F0EBC5 /* Net.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3ED0222A5E5700F0EBC5 /* Net.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EF3F26222A5FCF00F0EBC5 /* PlayerControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3F24222A5FCF00F0EBC5 /* PlayerControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EF3F2A222A5FEF00F0EBC5 /* UInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EDE222A5E5700F0EBC5 /* UInt32.swift */; };
+		84EF3F2B222A5FEF00F0EBC5 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EDF222A5E5700F0EBC5 /* UIView+.swift */; };
+		84EF3F2C222A5FEF00F0EBC5 /* DispatchTime+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE0222A5E5700F0EBC5 /* DispatchTime+.swift */; };
+		84EF3F2D222A5FEF00F0EBC5 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE1222A5E5700F0EBC5 /* TimeInterval+.swift */; };
+		84EF3F2E222A5FEF00F0EBC5 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE2222A5E5700F0EBC5 /* Double+.swift */; };
+		84EF3F2F222A5FEF00F0EBC5 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE3222A5E5700F0EBC5 /* UIImage+.swift */; };
+		84EF3F30222A5FEF00F0EBC5 /* BottomPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE5222A5E5700F0EBC5 /* BottomPanel.swift */; };
+		84EF3F31222A5FEF00F0EBC5 /* SpeedLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE6222A5E5700F0EBC5 /* SpeedLoadingView.swift */; };
+		84EF3F32222A5FEF00F0EBC5 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE8222A5E5700F0EBC5 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		84EF3F33222A5FEF00F0EBC5 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EE9222A5E5700F0EBC5 /* NVActivityIndicatorShape.swift */; };
+		84EF3F34222A5FEF00F0EBC5 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EEA222A5E5700F0EBC5 /* NVActivityIndicatorView.swift */; };
+		84EF3F35222A5FEF00F0EBC5 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EEC222A5E5700F0EBC5 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		84EF3F36222A5FEF00F0EBC5 /* TopPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EED222A5E5700F0EBC5 /* TopPanel.swift */; };
+		84EF3F37222A5FEF00F0EBC5 /* MoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EEE222A5E5700F0EBC5 /* MoreContentView.swift */; };
+		84EF3F38222A5FEF00F0EBC5 /* FastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EEF222A5E5700F0EBC5 /* FastView.swift */; };
+		84EF3F39222A5FEF00F0EBC5 /* VolumeBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EF0222A5E5700F0EBC5 /* VolumeBrightnessView.swift */; };
+		84EF3F3A222A5FEF00F0EBC5 /* AnimatablePlayOrPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EF1222A5E5700F0EBC5 /* AnimatablePlayOrPauseButton.swift */; };
+		84EF3F3B222A5FEF00F0EBC5 /* BufferSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EF2222A5E5700F0EBC5 /* BufferSlider.swift */; };
+		84EF3F3C222A5FEF00F0EBC5 /* PlayerPictureInPictureControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EF3222A5E5700F0EBC5 /* PlayerPictureInPictureControlsView.swift */; };
+		84EF3F3D222A5FEF00F0EBC5 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EF6222A5E5700F0EBC5 /* PlayerControlsView.swift */; };
+		84EF3F3E222A5FFC00F0EBC5 /* Player.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84EF3EF5222A5E5700F0EBC5 /* Player.bundle */; };
+		84EF3F48222A609D00F0EBC5 /* PlayerAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3F46222A609D00F0EBC5 /* PlayerAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EF3F4C222A60A900F0EBC5 /* MovieAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EDA222A5E5700F0EBC5 /* MovieAVPlayerController.swift */; };
+		84EF3F4D222A60A900F0EBC5 /* MovieAVPlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EDB222A5E5700F0EBC5 /* MovieAVPlayerLayerView.swift */; };
+		84EF3F57222A60BA00F0EBC5 /* PlayerIJKPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF3F55222A60BA00F0EBC5 /* PlayerIJKPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EF3F5B222A60C400F0EBC5 /* IJKPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED7222A5E5700F0EBC5 /* IJKPlayerController.swift */; };
+		84EF3F5C222A60C400F0EBC5 /* IJKEnum+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3ED8222A5E5700F0EBC5 /* IJKEnum+.swift */; };
+		84EF3F5E222A63F600F0EBC5 /* PlayerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */; };
+		84EF3F5F222A655F00F0EBC5 /* PlayerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */; };
+		84EF3F60222A656600F0EBC5 /* PlayerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84EF3EB7222A5E5600F0EBC5 /* UINavigationController+Autorotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Autorotate.m"; sourceTree = "<group>"; };
+		84EF3EB8222A5E5600F0EBC5 /* UITabBarController+Autorotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Autorotate.h"; sourceTree = "<group>"; };
+		84EF3EB9222A5E5600F0EBC5 /* UIViewController+Autorotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Autorotate.h"; sourceTree = "<group>"; };
+		84EF3EBA222A5E5600F0EBC5 /* UITabBarController+Autorotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Autorotate.m"; sourceTree = "<group>"; };
+		84EF3EBB222A5E5600F0EBC5 /* UINavigationController+Autorotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Autorotate.h"; sourceTree = "<group>"; };
+		84EF3EBC222A5E5600F0EBC5 /* UIViewController+Autorotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Autorotate.m"; sourceTree = "<group>"; };
+		84EF3EBD222A5E5600F0EBC5 /* Orientation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Orientation+.swift"; sourceTree = "<group>"; };
+		84EF3EBE222A5E5600F0EBC5 /* PlayerRotateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRotateManager.swift; sourceTree = "<group>"; };
+		84EF3EBF222A5E5600F0EBC5 /* PlayerViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerViewController+Delegate.swift"; sourceTree = "<group>"; };
+		84EF3EC1222A5E5600F0EBC5 /* PlayerPictureInPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPictureInPictureView.swift; sourceTree = "<group>"; };
+		84EF3EC3222A5E5600F0EBC5 /* PlayerPictureInPictureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPictureInPictureController.swift; sourceTree = "<group>"; };
+		84EF3EC4222A5E5600F0EBC5 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		84EF3EC6222A5E5600F0EBC5 /* Playerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playerable.swift; sourceTree = "<group>"; };
+		84EF3EC7222A5E5600F0EBC5 /* PlayerControlsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsable.swift; sourceTree = "<group>"; };
+		84EF3EC8222A5E5700F0EBC5 /* Playerable+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playerable+Optional.swift"; sourceTree = "<group>"; };
+		84EF3EC9222A5E5700F0EBC5 /* PlayerPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlayback.swift; sourceTree = "<group>"; };
+		84EF3ECB222A5E5700F0EBC5 /* PlayerGestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGestureManager.swift; sourceTree = "<group>"; };
+		84EF3ECC222A5E5700F0EBC5 /* PlayerGestureManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGestureManagerDelegate.swift; sourceTree = "<group>"; };
+		84EF3ECE222A5E5700F0EBC5 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		84EF3ED0222A5E5700F0EBC5 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
+		84EF3ED1222A5E5700F0EBC5 /* NetFlowMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlowMonitor.swift; sourceTree = "<group>"; };
+		84EF3ED2222A5E5700F0EBC5 /* Net.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Net.m; sourceTree = "<group>"; };
+		84EF3ED4222A5E5700F0EBC5 /* AVAudioSession+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioSession+.swift"; sourceTree = "<group>"; };
+		84EF3ED5222A5E5700F0EBC5 /* VolumeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeKit.swift; sourceTree = "<group>"; };
+		84EF3ED7222A5E5700F0EBC5 /* IJKPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJKPlayerController.swift; sourceTree = "<group>"; };
+		84EF3ED8222A5E5700F0EBC5 /* IJKEnum+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IJKEnum+.swift"; sourceTree = "<group>"; };
+		84EF3EDA222A5E5700F0EBC5 /* MovieAVPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAVPlayerController.swift; sourceTree = "<group>"; };
+		84EF3EDB222A5E5700F0EBC5 /* MovieAVPlayerLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAVPlayerLayerView.swift; sourceTree = "<group>"; };
+		84EF3EDE222A5E5700F0EBC5 /* UInt32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32.swift; sourceTree = "<group>"; };
+		84EF3EDF222A5E5700F0EBC5 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		84EF3EE0222A5E5700F0EBC5 /* DispatchTime+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+.swift"; sourceTree = "<group>"; };
+		84EF3EE1222A5E5700F0EBC5 /* TimeInterval+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
+		84EF3EE2222A5E5700F0EBC5 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		84EF3EE3222A5E5700F0EBC5 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		84EF3EE5222A5E5700F0EBC5 /* BottomPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPanel.swift; sourceTree = "<group>"; };
+		84EF3EE6222A5E5700F0EBC5 /* SpeedLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLoadingView.swift; sourceTree = "<group>"; };
+		84EF3EE8222A5E5700F0EBC5 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		84EF3EE9222A5E5700F0EBC5 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		84EF3EEA222A5E5700F0EBC5 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		84EF3EEC222A5E5700F0EBC5 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		84EF3EED222A5E5700F0EBC5 /* TopPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanel.swift; sourceTree = "<group>"; };
+		84EF3EEE222A5E5700F0EBC5 /* MoreContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreContentView.swift; sourceTree = "<group>"; };
+		84EF3EEF222A5E5700F0EBC5 /* FastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastView.swift; sourceTree = "<group>"; };
+		84EF3EF0222A5E5700F0EBC5 /* VolumeBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeBrightnessView.swift; sourceTree = "<group>"; };
+		84EF3EF1222A5E5700F0EBC5 /* AnimatablePlayOrPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePlayOrPauseButton.swift; sourceTree = "<group>"; };
+		84EF3EF2222A5E5700F0EBC5 /* BufferSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferSlider.swift; sourceTree = "<group>"; };
+		84EF3EF3222A5E5700F0EBC5 /* PlayerPictureInPictureControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPictureInPictureControlsView.swift; sourceTree = "<group>"; };
+		84EF3EF5222A5E5700F0EBC5 /* Player.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Player.bundle; sourceTree = "<group>"; };
+		84EF3EF6222A5E5700F0EBC5 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF3EFE222A5E8A00F0EBC5 /* PlayerCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerCore.h; sourceTree = "<group>"; };
+		84EF3EFF222A5E8A00F0EBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EF3F22222A5FCE00F0EBC5 /* PlayerControls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayerControls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF3F24222A5FCF00F0EBC5 /* PlayerControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerControls.h; sourceTree = "<group>"; };
+		84EF3F25222A5FCF00F0EBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EF3F44222A609D00F0EBC5 /* PlayerAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayerAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF3F46222A609D00F0EBC5 /* PlayerAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerAVPlayer.h; sourceTree = "<group>"; };
+		84EF3F47222A609D00F0EBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EF3F53222A60BA00F0EBC5 /* PlayerIJKPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlayerIJKPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF3F55222A60BA00F0EBC5 /* PlayerIJKPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerIJKPlayer.h; sourceTree = "<group>"; };
+		84EF3F56222A60BA00F0EBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EF3F61222A658500F0EBC5 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = Carthage/Build/iOS/IJKMediaFramework.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84EF3EF9222A5E8A00F0EBC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F1F222A5FCE00F0EBC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F5E222A63F600F0EBC5 /* PlayerCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F41222A609D00F0EBC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F5F222A655F00F0EBC5 /* PlayerCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F50222A60BA00F0EBC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F60222A656600F0EBC5 /* PlayerCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84EF3E77222A5CA800F0EBC5 = {
+			isa = PBXGroup;
+			children = (
+				84EF3EB3222A5E5600F0EBC5 /* Sources */,
+				84EF3EFD222A5E8A00F0EBC5 /* PlayerCore */,
+				84EF3F23222A5FCF00F0EBC5 /* PlayerControls */,
+				84EF3F45222A609D00F0EBC5 /* PlayerAVPlayer */,
+				84EF3F54222A60BA00F0EBC5 /* PlayerIJKPlayer */,
+				84EF3E81222A5CA800F0EBC5 /* Products */,
+				84EF3F5D222A63F600F0EBC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84EF3E81222A5CA800F0EBC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */,
+				84EF3F22222A5FCE00F0EBC5 /* PlayerControls.framework */,
+				84EF3F44222A609D00F0EBC5 /* PlayerAVPlayer.framework */,
+				84EF3F53222A60BA00F0EBC5 /* PlayerIJKPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84EF3EB3222A5E5600F0EBC5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EB4222A5E5600F0EBC5 /* Core */,
+				84EF3EDC222A5E5700F0EBC5 /* Controls */,
+				84EF3ED6222A5E5700F0EBC5 /* IJKPlayer */,
+				84EF3ED9222A5E5700F0EBC5 /* AVPlayer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		84EF3EB4222A5E5600F0EBC5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EC4222A5E5600F0EBC5 /* PlayerViewController.swift */,
+				84EF3EBF222A5E5600F0EBC5 /* PlayerViewController+Delegate.swift */,
+				84EF3EC5222A5E5600F0EBC5 /* Protocol */,
+				84EF3EB5222A5E5600F0EBC5 /* Rotate */,
+				84EF3ECA222A5E5700F0EBC5 /* Gesture */,
+				84EF3EC0222A5E5600F0EBC5 /* PictureInPicture */,
+				84EF3ECF222A5E5700F0EBC5 /* NetFlowMonitor */,
+				84EF3ED3222A5E5700F0EBC5 /* Volume */,
+				84EF3ECD222A5E5700F0EBC5 /* Log */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		84EF3EB5222A5E5600F0EBC5 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EB6222A5E5600F0EBC5 /* Autorotate */,
+				84EF3EBE222A5E5600F0EBC5 /* PlayerRotateManager.swift */,
+				84EF3EBD222A5E5600F0EBC5 /* Orientation+.swift */,
+			);
+			path = Rotate;
+			sourceTree = "<group>";
+		};
+		84EF3EB6222A5E5600F0EBC5 /* Autorotate */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EBB222A5E5600F0EBC5 /* UINavigationController+Autorotate.h */,
+				84EF3EB7222A5E5600F0EBC5 /* UINavigationController+Autorotate.m */,
+				84EF3EB8222A5E5600F0EBC5 /* UITabBarController+Autorotate.h */,
+				84EF3EBA222A5E5600F0EBC5 /* UITabBarController+Autorotate.m */,
+				84EF3EB9222A5E5600F0EBC5 /* UIViewController+Autorotate.h */,
+				84EF3EBC222A5E5600F0EBC5 /* UIViewController+Autorotate.m */,
+			);
+			path = Autorotate;
+			sourceTree = "<group>";
+		};
+		84EF3EC0222A5E5600F0EBC5 /* PictureInPicture */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EC3222A5E5600F0EBC5 /* PlayerPictureInPictureController.swift */,
+				84EF3EC1222A5E5600F0EBC5 /* PlayerPictureInPictureView.swift */,
+			);
+			path = PictureInPicture;
+			sourceTree = "<group>";
+		};
+		84EF3EC5222A5E5600F0EBC5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EC6222A5E5600F0EBC5 /* Playerable.swift */,
+				84EF3EC7222A5E5600F0EBC5 /* PlayerControlsable.swift */,
+				84EF3EC8222A5E5700F0EBC5 /* Playerable+Optional.swift */,
+				84EF3EC9222A5E5700F0EBC5 /* PlayerPlayback.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		84EF3ECA222A5E5700F0EBC5 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3ECB222A5E5700F0EBC5 /* PlayerGestureManager.swift */,
+				84EF3ECC222A5E5700F0EBC5 /* PlayerGestureManagerDelegate.swift */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		84EF3ECD222A5E5700F0EBC5 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3ECE222A5E5700F0EBC5 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		84EF3ECF222A5E5700F0EBC5 /* NetFlowMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3ED0222A5E5700F0EBC5 /* Net.h */,
+				84EF3ED1222A5E5700F0EBC5 /* NetFlowMonitor.swift */,
+				84EF3ED2222A5E5700F0EBC5 /* Net.m */,
+			);
+			path = NetFlowMonitor;
+			sourceTree = "<group>";
+		};
+		84EF3ED3222A5E5700F0EBC5 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3ED4222A5E5700F0EBC5 /* AVAudioSession+.swift */,
+				84EF3ED5222A5E5700F0EBC5 /* VolumeKit.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		84EF3ED6222A5E5700F0EBC5 /* IJKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3ED7222A5E5700F0EBC5 /* IJKPlayerController.swift */,
+				84EF3ED8222A5E5700F0EBC5 /* IJKEnum+.swift */,
+			);
+			path = IJKPlayer;
+			sourceTree = "<group>";
+		};
+		84EF3ED9222A5E5700F0EBC5 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EDA222A5E5700F0EBC5 /* MovieAVPlayerController.swift */,
+				84EF3EDB222A5E5700F0EBC5 /* MovieAVPlayerLayerView.swift */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		84EF3EDC222A5E5700F0EBC5 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EF6222A5E5700F0EBC5 /* PlayerControlsView.swift */,
+				84EF3EF3222A5E5700F0EBC5 /* PlayerPictureInPictureControlsView.swift */,
+				84EF3EE4222A5E5700F0EBC5 /* View */,
+				84EF3EDD222A5E5700F0EBC5 /* Extension */,
+				84EF3EF4222A5E5700F0EBC5 /* Resource */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		84EF3EDD222A5E5700F0EBC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EDE222A5E5700F0EBC5 /* UInt32.swift */,
+				84EF3EDF222A5E5700F0EBC5 /* UIView+.swift */,
+				84EF3EE0222A5E5700F0EBC5 /* DispatchTime+.swift */,
+				84EF3EE1222A5E5700F0EBC5 /* TimeInterval+.swift */,
+				84EF3EE2222A5E5700F0EBC5 /* Double+.swift */,
+				84EF3EE3222A5E5700F0EBC5 /* UIImage+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84EF3EE4222A5E5700F0EBC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EE7222A5E5700F0EBC5 /* NVActivityIndicatorView */,
+				84EF3EED222A5E5700F0EBC5 /* TopPanel.swift */,
+				84EF3EE5222A5E5700F0EBC5 /* BottomPanel.swift */,
+				84EF3EEF222A5E5700F0EBC5 /* FastView.swift */,
+				84EF3EF2222A5E5700F0EBC5 /* BufferSlider.swift */,
+				84EF3EEE222A5E5700F0EBC5 /* MoreContentView.swift */,
+				84EF3EE6222A5E5700F0EBC5 /* SpeedLoadingView.swift */,
+				84EF3EF0222A5E5700F0EBC5 /* VolumeBrightnessView.swift */,
+				84EF3EF1222A5E5700F0EBC5 /* AnimatablePlayOrPauseButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EF3EE7222A5E5700F0EBC5 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EE8222A5E5700F0EBC5 /* NVActivityIndicatorAnimationDelegate.swift */,
+				84EF3EE9222A5E5700F0EBC5 /* NVActivityIndicatorShape.swift */,
+				84EF3EEA222A5E5700F0EBC5 /* NVActivityIndicatorView.swift */,
+				84EF3EEB222A5E5700F0EBC5 /* Animations */,
+			);
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		84EF3EEB222A5E5700F0EBC5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EEC222A5E5700F0EBC5 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		84EF3EF4222A5E5700F0EBC5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EF5222A5E5700F0EBC5 /* Player.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84EF3EFD222A5E8A00F0EBC5 /* PlayerCore */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3EFE222A5E8A00F0EBC5 /* PlayerCore.h */,
+				84EF3EFF222A5E8A00F0EBC5 /* Info.plist */,
+			);
+			path = PlayerCore;
+			sourceTree = "<group>";
+		};
+		84EF3F23222A5FCF00F0EBC5 /* PlayerControls */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3F24222A5FCF00F0EBC5 /* PlayerControls.h */,
+				84EF3F25222A5FCF00F0EBC5 /* Info.plist */,
+			);
+			path = PlayerControls;
+			sourceTree = "<group>";
+		};
+		84EF3F45222A609D00F0EBC5 /* PlayerAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3F46222A609D00F0EBC5 /* PlayerAVPlayer.h */,
+				84EF3F47222A609D00F0EBC5 /* Info.plist */,
+			);
+			path = PlayerAVPlayer;
+			sourceTree = "<group>";
+		};
+		84EF3F54222A60BA00F0EBC5 /* PlayerIJKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3F55222A60BA00F0EBC5 /* PlayerIJKPlayer.h */,
+				84EF3F56222A60BA00F0EBC5 /* Info.plist */,
+			);
+			path = PlayerIJKPlayer;
+			sourceTree = "<group>";
+		};
+		84EF3F5D222A63F600F0EBC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84EF3F61222A658500F0EBC5 /* IJKMediaFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84EF3EF7222A5E8A00F0EBC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F00222A5E8A00F0EBC5 /* PlayerCore.h in Headers */,
+				84EF3F1C222A5F6200F0EBC5 /* Net.h in Headers */,
+				84EF3F19222A5F6200F0EBC5 /* UITabBarController+Autorotate.h in Headers */,
+				84EF3F1A222A5F6200F0EBC5 /* UIViewController+Autorotate.h in Headers */,
+				84EF3F1B222A5F6200F0EBC5 /* UINavigationController+Autorotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F1D222A5FCE00F0EBC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F26222A5FCF00F0EBC5 /* PlayerControls.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F3F222A609D00F0EBC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F48222A609D00F0EBC5 /* PlayerAVPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F4E222A60BA00F0EBC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F57222A60BA00F0EBC5 /* PlayerIJKPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84EF3EFB222A5E8A00F0EBC5 /* PlayerCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EF3F01222A5E8A00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerCore" */;
+			buildPhases = (
+				84EF3EF7222A5E8A00F0EBC5 /* Headers */,
+				84EF3EF8222A5E8A00F0EBC5 /* Sources */,
+				84EF3EF9222A5E8A00F0EBC5 /* Frameworks */,
+				84EF3EFA222A5E8A00F0EBC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayerCore;
+			productName = PlayerCore;
+			productReference = 84EF3EFC222A5E8A00F0EBC5 /* PlayerCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84EF3F21222A5FCE00F0EBC5 /* PlayerControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EF3F27222A5FCF00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerControls" */;
+			buildPhases = (
+				84EF3F1D222A5FCE00F0EBC5 /* Headers */,
+				84EF3F1E222A5FCE00F0EBC5 /* Sources */,
+				84EF3F1F222A5FCE00F0EBC5 /* Frameworks */,
+				84EF3F20222A5FCE00F0EBC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayerControls;
+			productName = PlayerControls;
+			productReference = 84EF3F22222A5FCE00F0EBC5 /* PlayerControls.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84EF3F43222A609D00F0EBC5 /* PlayerAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EF3F49222A609D00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerAVPlayer" */;
+			buildPhases = (
+				84EF3F3F222A609D00F0EBC5 /* Headers */,
+				84EF3F40222A609D00F0EBC5 /* Sources */,
+				84EF3F41222A609D00F0EBC5 /* Frameworks */,
+				84EF3F42222A609D00F0EBC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayerAVPlayer;
+			productName = PlayerAVPlayer;
+			productReference = 84EF3F44222A609D00F0EBC5 /* PlayerAVPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84EF3F52222A60BA00F0EBC5 /* PlayerIJKPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EF3F58222A60BA00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerIJKPlayer" */;
+			buildPhases = (
+				84EF3F4E222A60BA00F0EBC5 /* Headers */,
+				84EF3F4F222A60BA00F0EBC5 /* Sources */,
+				84EF3F50222A60BA00F0EBC5 /* Frameworks */,
+				84EF3F51222A60BA00F0EBC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayerIJKPlayer;
+			productName = PlayerIJKPlayer;
+			productReference = 84EF3F53222A60BA00F0EBC5 /* PlayerIJKPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84EF3E78222A5CA800F0EBC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = chenp;
+				TargetAttributes = {
+					84EF3EFB222A5E8A00F0EBC5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84EF3F21222A5FCE00F0EBC5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84EF3F43222A609D00F0EBC5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84EF3F52222A60BA00F0EBC5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 84EF3E7B222A5CA800F0EBC5 /* Build configuration list for PBXProject "Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84EF3E77222A5CA800F0EBC5;
+			productRefGroup = 84EF3E81222A5CA800F0EBC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84EF3EFB222A5E8A00F0EBC5 /* PlayerCore */,
+				84EF3F21222A5FCE00F0EBC5 /* PlayerControls */,
+				84EF3F43222A609D00F0EBC5 /* PlayerAVPlayer */,
+				84EF3F52222A60BA00F0EBC5 /* PlayerIJKPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84EF3EFA222A5E8A00F0EBC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F20222A5FCE00F0EBC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F3E222A5FFC00F0EBC5 /* Player.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F42222A609D00F0EBC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F51222A60BA00F0EBC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84EF3EF8222A5E8A00F0EBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F04222A5F4400F0EBC5 /* UINavigationController+Autorotate.m in Sources */,
+				84EF3F05222A5F4400F0EBC5 /* UITabBarController+Autorotate.m in Sources */,
+				84EF3F06222A5F4400F0EBC5 /* UIViewController+Autorotate.m in Sources */,
+				84EF3F16222A5F4400F0EBC5 /* Net.m in Sources */,
+				84EF3F07222A5F4400F0EBC5 /* Orientation+.swift in Sources */,
+				84EF3F08222A5F4400F0EBC5 /* PlayerRotateManager.swift in Sources */,
+				84EF3F09222A5F4400F0EBC5 /* PlayerViewController+Delegate.swift in Sources */,
+				84EF3F0A222A5F4400F0EBC5 /* PlayerPictureInPictureView.swift in Sources */,
+				84EF3F0C222A5F4400F0EBC5 /* PlayerPictureInPictureController.swift in Sources */,
+				84EF3F0D222A5F4400F0EBC5 /* PlayerViewController.swift in Sources */,
+				84EF3F0E222A5F4400F0EBC5 /* Playerable.swift in Sources */,
+				84EF3F0F222A5F4400F0EBC5 /* PlayerControlsable.swift in Sources */,
+				84EF3F10222A5F4400F0EBC5 /* Playerable+Optional.swift in Sources */,
+				84EF3F11222A5F4400F0EBC5 /* PlayerPlayback.swift in Sources */,
+				84EF3F12222A5F4400F0EBC5 /* PlayerGestureManager.swift in Sources */,
+				84EF3F13222A5F4400F0EBC5 /* PlayerGestureManagerDelegate.swift in Sources */,
+				84EF3F14222A5F4400F0EBC5 /* Log.swift in Sources */,
+				84EF3F15222A5F4400F0EBC5 /* NetFlowMonitor.swift in Sources */,
+				84EF3F17222A5F4400F0EBC5 /* AVAudioSession+.swift in Sources */,
+				84EF3F18222A5F4400F0EBC5 /* VolumeKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F1E222A5FCE00F0EBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F2A222A5FEF00F0EBC5 /* UInt32.swift in Sources */,
+				84EF3F2B222A5FEF00F0EBC5 /* UIView+.swift in Sources */,
+				84EF3F2C222A5FEF00F0EBC5 /* DispatchTime+.swift in Sources */,
+				84EF3F2D222A5FEF00F0EBC5 /* TimeInterval+.swift in Sources */,
+				84EF3F2E222A5FEF00F0EBC5 /* Double+.swift in Sources */,
+				84EF3F2F222A5FEF00F0EBC5 /* UIImage+.swift in Sources */,
+				84EF3F30222A5FEF00F0EBC5 /* BottomPanel.swift in Sources */,
+				84EF3F31222A5FEF00F0EBC5 /* SpeedLoadingView.swift in Sources */,
+				84EF3F32222A5FEF00F0EBC5 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				84EF3F33222A5FEF00F0EBC5 /* NVActivityIndicatorShape.swift in Sources */,
+				84EF3F34222A5FEF00F0EBC5 /* NVActivityIndicatorView.swift in Sources */,
+				84EF3F35222A5FEF00F0EBC5 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				84EF3F36222A5FEF00F0EBC5 /* TopPanel.swift in Sources */,
+				84EF3F37222A5FEF00F0EBC5 /* MoreContentView.swift in Sources */,
+				84EF3F38222A5FEF00F0EBC5 /* FastView.swift in Sources */,
+				84EF3F39222A5FEF00F0EBC5 /* VolumeBrightnessView.swift in Sources */,
+				84EF3F3A222A5FEF00F0EBC5 /* AnimatablePlayOrPauseButton.swift in Sources */,
+				84EF3F3B222A5FEF00F0EBC5 /* BufferSlider.swift in Sources */,
+				84EF3F3C222A5FEF00F0EBC5 /* PlayerPictureInPictureControlsView.swift in Sources */,
+				84EF3F3D222A5FEF00F0EBC5 /* PlayerControlsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F40222A609D00F0EBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F4C222A60A900F0EBC5 /* MovieAVPlayerController.swift in Sources */,
+				84EF3F4D222A60A900F0EBC5 /* MovieAVPlayerLayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EF3F4F222A60BA00F0EBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EF3F5B222A60C400F0EBC5 /* IJKPlayerController.swift in Sources */,
+				84EF3F5C222A60C400F0EBC5 /* IJKEnum+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84EF3E90222A5CA900F0EBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84EF3E91222A5CA900F0EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84EF3F02222A5E8A00F0EBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84EF3F03222A5E8A00F0EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84EF3F28222A5FCF00F0EBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerControls/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerControls;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84EF3F29222A5FCF00F0EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerControls/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerControls;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84EF3F4A222A609D00F0EBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerAVPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84EF3F4B222A609D00F0EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlayerAVPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerAVPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84EF3F59222A60BA00F0EBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PlayerIJKPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerIJKPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84EF3F5A222A60BA00F0EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PlayerIJKPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cp.swift.PlayerIJKPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84EF3E7B222A5CA800F0EBC5 /* Build configuration list for PBXProject "Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF3E90222A5CA900F0EBC5 /* Debug */,
+				84EF3E91222A5CA900F0EBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF3F01222A5E8A00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF3F02222A5E8A00F0EBC5 /* Debug */,
+				84EF3F03222A5E8A00F0EBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF3F27222A5FCF00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF3F28222A5FCF00F0EBC5 /* Debug */,
+				84EF3F29222A5FCF00F0EBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF3F49222A609D00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF3F4A222A609D00F0EBC5 /* Debug */,
+				84EF3F4B222A609D00F0EBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EF3F58222A60BA00F0EBC5 /* Build configuration list for PBXNativeTarget "PlayerIJKPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EF3F59222A60BA00F0EBC5 /* Debug */,
+				84EF3F5A222A60BA00F0EBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84EF3E78222A5CA800F0EBC5 /* Project object */;
+}
